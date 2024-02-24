@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>
 
 using namespace std;
 
@@ -20,6 +21,6 @@ int main() {
         sum += v[i];
     }
     average = static_cast<float>(sum) / v.size();
-    cout << sum << ' ' << average;
+    cout << sum << ' ' << fixed << setprecision(1) << average;
     return 0;
 }
