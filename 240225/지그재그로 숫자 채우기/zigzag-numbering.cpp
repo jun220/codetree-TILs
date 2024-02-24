@@ -6,7 +6,7 @@ int main() {
     int n, m;
     cin >> n >> m;
     int num=0;
-    vector<vector<int>>v(n, vector<int>(m));
+    vector<vector<int>>v(m, vector<int>(n));
 
     for(int j=0; j<m;j++){
         if(j%2 == 0){
