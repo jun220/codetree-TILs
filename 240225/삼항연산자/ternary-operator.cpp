@@ -4,6 +4,6 @@ int main() {
     int score;
     cin >> score;
 
-    cout << ((score == "100") ? "pass" : "failure");
+    cout << ((score == 100) ? "pass" : "failure");
     return 0;
 }
