@@ -6,6 +6,6 @@ int main() {
     cin >> a >> b;
 
     if(a>b)cout <<a*b;
-    else cout << b%a;
+    else cout << b/a;
     return 0;
 }
