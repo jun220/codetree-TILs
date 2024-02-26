@@ -12,6 +12,7 @@ int main() {
         cin >> v[i];
     }
 
+    sort(v.begin(), v.end());
     cout << v[k-1];
     
     return 0;
