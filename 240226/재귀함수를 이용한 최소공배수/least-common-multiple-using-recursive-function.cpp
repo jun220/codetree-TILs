@@ -30,6 +30,8 @@ int main() {
     temp = v[0];
     for(int i=1;i<n;i++){
         result = lcm(temp, v[i]);
+        //cout << result << '\n';
+        temp = result;
     }
     cout << result;
     return 0;
