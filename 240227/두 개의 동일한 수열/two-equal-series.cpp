@@ -6,7 +6,6 @@ using namespace std;
 bool check(vector<int> v1, vector<int> v2){
     for(int i=0;i<v1.size(); i++){
         if(v1[i] != v2[i]){
-            cout << i << v1[i] << v2[i];
             return false;
         }
     }
