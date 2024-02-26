@@ -12,12 +12,17 @@ int main() {
         cin >> v[i];
     }
 
+
+
+
+    sort(v.begin(), v.end());
+
     for(int i=0;i<n;i++){
         cout << v[i] << ' ';
     }
-    cout << '\n';
 
-    sort(v.begin(), v.end());
+    reverse(v.begin(), v.end());
+    cout << '\n';
 
     for(int i=0;i<n;i++){
         cout << v[i] << ' ';
