@@ -9,6 +9,7 @@ bool isLeapYear(int year) {
 
 int main() {
     int Y, M, D;
+    cin >> Y >> M >> D;
     vector<int> maxDaysInMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     if (isLeapYear(Y)) {
