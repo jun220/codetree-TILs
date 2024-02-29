@@ -23,7 +23,7 @@ int mid(vector<int> v, int num){
 int main() {
     int n;
     cin >> n;
-    vector<int> v(n, 101);
+    vector<int> v(n, 200);
 
     for(int i=0;i<n;i++){
         cin >> v[i];
