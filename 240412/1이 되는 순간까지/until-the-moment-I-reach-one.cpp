@@ -1,24 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int cal(int n) {
-    if (n < 10) {
-        if (n % 2 == 0) return 0;
-        else return n;
+void cal(int n, int count) {
+    if (n == 1) {
+        cout << count;
+        return;
     }
-    int sum{ 0 };
-    int temp = n % 10;
-    if (temp % 2 != 0) {
-        sum += temp;
+    int result = n;
+    if (n % 2 == 0) {
+        n /= 2;
     }
-
-    sum += cal(n / 10);
-    return sum;
+    else {
+        n /= 3;
+    }
+    count++;
+    cal(n, count);
 }
 
 int main() {
+    int count{ 0 };
     int n;
     cin >> n;
-    cout << cal(n);
+    cal(n, count);
     return 0;
 }
